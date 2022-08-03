@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0d4604577d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="images/Valle las trancas.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="lascabanas.html">LAS CABAÑAS</a></li>
+                    <li><a href="reserva.html">RESERVA</a></li>
+                    <li><a href="ubicacion.html">UBICACION</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Cabañas Alto del Huemul</h1>
+            <p>Ubicadas en el Valle de Las Trancas a 10 minutos del mejor centro de Ski de Sudamerica Nevados de Chillan
+            </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1183.9320344635898!2d-71.50049033083252!3d-36.91269591440468!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x454bdd64a5418e81!2sArriendo%20Caba%C3%B1a%20Las%20Trancas%20(Alto%20del%20Huemul)!5e0!3m2!1ses!2scl!4v1659503339228!5m2!1ses!2scl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!------javascript------->
+    <script>
+        var navLinks = document.getElementById("navlinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+
+        }
+
+
+    </script>
+</body>
+
+</html>
